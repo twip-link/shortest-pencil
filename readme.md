@@ -43,7 +43,7 @@ On Windows 11, shortcuts using shortcut keys can get pretty convoluted. I went w
 
 ^!+.::{
     Run('C:\Users\username\notes\sp.exe notepad', 'C:\Users\username\notes\', 'Min')
-    Sleep 100
+    Sleep 500
     Send '{Enter}'
 }
 ```
