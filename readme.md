@@ -37,13 +37,19 @@ Under `Set Custom Shortcut`:
 
 ### Windows
 
-On Windows 11, add a BAT file with the following line, and configure a shortcut for it:
-`start %USERPROFILE%/notes/sp.exe notepad`
+On Windows 11, shortcuts using shortcut keys can get pretty convoluted. I went with AutoHotKey instead:
+```
+#Requires AutoHotkey v2.0
 
-1. `Right-click > Create Shortcut`
-1. With the shortcut file selected: `Alt + Enter`
-1. In **Properties**, click **Shortcut key**
-1. Type your shortcut
-1. Click **OK**
+^!+.::{
+    Run('C:\Users\username\notes\sp.exe notepad', 'C:\Users\username\notes\', 'Min')
+    Sleep 100
+    Send '{Enter}'
+}
+```
 
-Windows 11 doesn't allow `Space`, `Backspace`, or `Super` in these shortcuts. I went with `Ctrl + Alt + Shift + .` And then I added a macro for `Function + Space` on my keyboard.
+Finding a shortcut that won't overlap with your apps is important. 
+
+I went with `Ctrl + Alt + Shift + .` 
+
+And then I added a macro for `Function + Space` on my keyboard.

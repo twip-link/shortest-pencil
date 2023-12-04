@@ -34,7 +34,7 @@ func launch(editor string, fn string) {
 }
 
 func notesPath() string {
-	return filepath.Join("notes", utcYear(), txtFilename())
+	return filepath.Join(utcYear(), txtFilename())
 }
 
 func utcYear() string {
