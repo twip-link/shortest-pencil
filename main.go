@@ -34,7 +34,13 @@ func launch(editor string, fn string) {
 }
 
 func notesPath() string {
-	return filepath.Join(utcYear(), txtFilename())
+	exe, err := os.Executable()
+	if err != nil {
+		panic(err)
+	}
+	exeFolder := filepath.Dir(exe)
+
+	return filepath.Join(exeFolder, utcYear(), txtFilename())
 }
 
 func utcYear() string {

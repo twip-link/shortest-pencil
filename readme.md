@@ -30,7 +30,7 @@ How you call the shortcut is up to you; what's shown here worked for me.
 ### Ubuntu
 
 On Ubuntu, I added a shortcut with the following command:
-`gnome-terminal -e "~/notes/sp.exe subl"`
+`gnome-terminal -e  '/home/username/notes/sp.exe subl'`
 
 Under `Set Custom Shortcut`:
 `Settings > Keyboard > Keyboard Shortcuts - View and Customize Shortcuts > Custom Shortcuts`
