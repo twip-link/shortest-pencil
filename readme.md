@@ -13,7 +13,7 @@ If it were run *today*, something like this:
 
 `go build -o sp.exe`
 
-## Example Setup
+## Example setup
 
 1. Put the executable (matching your OS) in a folder called `notes`
 1. Configure a shortcut for execution with either `subl` or `notepad` as the only argument.
