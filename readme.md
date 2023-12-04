@@ -33,12 +33,12 @@ On Ubuntu, I added a shortcut with the following command:
 `gnome-terminal -e "~/notes/sp.exe subl"`
 
 Under `Set Custom Shortcut`:
-`Settings > Keyboard ? Keyboard Shortcuts - View and Customize Shortcuts > Custom Shortcuts`
+`Settings > Keyboard > Keyboard Shortcuts - View and Customize Shortcuts > Custom Shortcuts`
 
 ### Windows
 
 On Windows 11, add a BAT file with the following line, and configure a shortcut for it:
-`start ~/notes/sp.exe notepad`
+`start %USERPROFILE%/notes/sp.exe notepad`
 
 1. Right-click > Create Shortcut
 1. With the shotcut file selected: `Alt + Enter`
@@ -47,11 +47,3 @@ On Windows 11, add a BAT file with the following line, and configure a shortcut 
 1. Click **OK**
 
 Windows 11 doesn't allow `Space`, `Backspace`, or `Super` in these shortcuts. I went with `Ctrl + Alt + Shift + .` And then I added a macro for `Function + Space` on my keyboard.
-
-
-
-
-
-
-
-
